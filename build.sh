@@ -11,9 +11,9 @@ gcc -O1 -o prog main.c -lraylib -lm -ggdb -Wall -Wextra -Werror \
  -Wunused-macros \
  -Wduplicated-cond \
  -Wduplicated-branches \
- -fsanitize=address \
- -fsanitize=leak \
- -fsanitize=undefined \
- -fsanitize=float-divide-by-zero \
- -fsanitize=integer-divide-by-zero
- #-Wbad-function-cast
+ #-fsanitize=undefined \
+ #-fsanitize=float-divide-by-zero \
+ #-fsanitize=integer-divide-by-zero \
+ #-fsanitize=leak \
+ #-fsanitize=address \
+ #-Wbad-function-cast \
